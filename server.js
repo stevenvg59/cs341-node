@@ -6,7 +6,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/hannah', (req,res) => {
-    res.send("Hannah Birch");
+    res.send("Emily Birch");
   });
 
 const port = 3000;
