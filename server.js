@@ -4,6 +4,11 @@ const app = express();
 app.get('/', (req,res) => {
   res.send("Sarah Birch");
 });
+
+app.get('/hannah', (req,res) => {
+    res.send("Hannah Birch");
+  });
+
 const port = 3000;
 
 app.listen(process.env.port || port);
