@@ -11,7 +11,7 @@ const getAll = async (req, res, next) => {
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
-    });
+      });
 };
 
 const getOne = async (req, res, next) => {
@@ -20,11 +20,11 @@ const getOne = async (req, res, next) => {
     .getDb()
     .db()
     .collection('contacts')
-    .find({_id: userId});
+    .find({ _id: userId });
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists[0]);
-    });
+  });
 };
 
-module.exports = { getOne, getAll };
+module.exports = { getAll, getOne };
