@@ -10,12 +10,9 @@ app.use(bodyParser.json());
 
 app.use('/', require('./routes'));
 
-mongodb.initDb((err, mongodb) => {
-    if (err) {
-        console.log(err);
-    }
-    else {
+mongodb.initDb(() => {
+    
         app.listen(process.env.port || port);
-        console.log('Connected to DB and listening to ${port}');
-    }
+        console.log('Connected to DB and listening to port 8080');
+    
 });
