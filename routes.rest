@@ -37,3 +37,47 @@ content-type: application/json
 }
 ### DELETE contact
 DELETE http://localhost:8080/contacts/645fa181db9047994290bef3 HTTP/1.1
+
+
+###
+
+//RENDER
+// LOCALHOST
+GET https://cse341-nodejs-g2jn.onrender.com/contacts
+###
+
+GET https://cse341-nodejs-g2jn.onrender.com/contacts/6456d4008886e3ddb18dfc29
+###
+
+GET https://cse341-nodejs-g2jn.onrender.com/contacts/6456d49d8886e3ddb18dfc2a
+###
+
+GET https://cse341-nodejs-g2jn.onrender.com/contacts/6456d4de8886e3ddb18dfc2b
+###
+
+### Create contact
+POST https://cse341-nodejs-g2jn.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+
+### PUT contact
+PUT https://cse341-nodejs-g2jn.onrender.com/contacts/645fa181db9047994290bef3 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Birch",
+    "email":"test@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"12/12/20"
+}
+### DELETE contact
+DELETE https://cse341-nodejs-g2jn.onrender.com/contacts/645fa181db9047994290bef3 HTTP/1.1
