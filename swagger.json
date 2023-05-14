@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "CONTACTS API",
-    "description": "API",
+    "description": "No much to say about this API",
     "version": "1.0.0"
   },
   "host": "cse341-nodejs-g2jn.onrender.com",
