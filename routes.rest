@@ -16,27 +16,27 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Ashley",
-    "lastName":"Weaver",
-    "email":"aWeaver@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/19/2000"
+    "firstName":"Carlos",
+    "lastName":"Valencia",
+    "email":"carlos@cs341.com",
+    "favoriteColor":"Black",
+    "birthday":"05/24/1990"
 }
 
 
 ### PUT contact
-PUT http://localhost:8080/contacts/645fa181db9047994290bef3 HTTP/1.1
+PUT http://localhost:8080/contacts/646023e01f0d01e574b74993 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Sarah",
-    "lastName":"Birch",
-    "email":"test@gmail.com",
-    "favoriteColor":"Green",
-    "birthday":"12/12/20"
+    "firstName":"Carlos",
+    "lastName":"Valencia",
+    "email":"carlos@cs341.com",
+    "favoriteColor":"White",
+    "birthday":"04/11/60"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/645fa181db9047994290bef3 HTTP/1.1
+DELETE http://localhost:8080/contacts/646023e01f0d01e574b74993 HTTP/1.1
 
 
 ###
@@ -60,11 +60,11 @@ POST https://cse341-nodejs-g2jn.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Ashley",
-    "lastName":"Weaver",
-    "email":"aWeaver@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/19/2000"
+    "firstName":"Carlos",
+    "lastName":"Valencia",
+    "email":"carlos@cs341.com",
+    "favoriteColor":"Black",
+    "birthday":"05/24/1990"
 }
 
 
@@ -72,12 +72,13 @@ content-type: application/json
 PUT https://cse341-nodejs-g2jn.onrender.com/contacts/645fa181db9047994290bef3 HTTP/1.1
 content-type: application/json
 
+
 {
-    "firstName":"Sarah",
-    "lastName":"Birch",
-    "email":"test@gmail.com",
-    "favoriteColor":"Green",
-    "birthday":"12/12/20"
+    "firstName":"Carlos",
+    "lastName":"Valencia",
+    "email":"carlos@cs341.com",
+    "favoriteColor":"White",
+    "birthday":"04/11/60"
 }
 ### DELETE contact
 DELETE https://cse341-nodejs-g2jn.onrender.com/contacts/645fa181db9047994290bef3 HTTP/1.1

@@ -66,6 +66,7 @@ const updateContact = async (req, res) => {
   }
 };
 
+
 const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const response = await mongodb.getDb().db('CS341').collection('Contacts').deleteOne({ _id: userId }, true);
@@ -77,6 +78,11 @@ const deleteContact = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getOne, createContact,
+
+module.exports = { 
+  getAll, 
+  getOne, 
+  createContact,
   updateContact,
-  deleteContact };
+  deleteContact 
+};
